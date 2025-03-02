@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorama Sentani</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script>
+        function searchFunction() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let posts = document.querySelectorAll('.post');
+            
+            posts.forEach(post => {
+                if (post.innerText.toLowerCase().includes(input)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="assets/img/logo.png" alt="logo" width="100" height="130"></div>
+        <h1>Panorama Sentani</h1>
+        <p>Sebuah website tentang Sentani dan keanekaragaman budayanya.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Beranda</a></li>
+            <li><a href="#danau" id="danau">Danau</a></li>
+            <li><a href="#">Lukisan</a></li>
+            <li><a href="#">Tarian</a></li>
+            <li><a href="#">Nyanyian</a></li>
+            <li><a href="#">Masyarakat</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <div class="container">
+            <aside>
+                <h2>Pencarian</h2>
+                <input type="text" id="searchInput" placeholder="Tulis kata kunci di sini..." style="padding: 12px;">
+                <button onclick="searchFunction()" style="padding: 12px; margin: 10px;background-color:#112b37; color: aliceblue;">Cari</button>
+                <h2>Postingan Populer</h2>
+                <ul>
+                    <li><a href="https://indonesiakaya.com/pustaka-indonesia/gambar-kehidupan-di-kulit-kayu/">Keindahan Alam yang Menginspirasi Lukisan Kulit Kayu</a></li>
+                    <li><a href="https://storydiup.com/mengenal-danau-sentani-dan-legenda-penunggang-kuda/">Gerakan yang Menceritakan Kehidupan di Danau</a></li>
+                    <li><a href="https://lagubahasasentani.blogspot.com/2017/03/lagu-rohani-bahasa-sentani-rimale.html">Nyanyian dalam Bahasa Sentani yang Mengharukan</a></li>
+                    <li><a href="https://acelacbd.com/mengenal-lebih-dekat-budaya-dan-tradisi-masyarakat-sekitar-danau-sentani/">Aktivitas Sehari-hari Masyarakat di Sekitar Danau Sentani</a></li>
+                </ul>
+            </aside>
+            <main>
+                <h2>Postingan Terbaru</h2>
+                <div class="post">
+                    <img src="assets/img/sentani.jpg" alt="" style="width:150px">
+                    <div>
+                        <p style="font-style: italic;">Kategori: Danau</p>
+                        <h3>Legenda dan Kepercayaan Masyarakat Sentani tentang Danau yang Sakral</h3>
+                        <p>Menelusuri kisah-kisah legenda yang dipercaya oleh masyarakat sekitar Danau Sentani...</p>
+                        <a href="danau.html" style="font-style: italic;">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="assets/img/danau.jpg" alt="danau" style="width:150px">
+                    <div>
+                        <h3>Perayaan Budaya yang Menghidupkan Tradisi</h3>
+                        <p>Menjelaskan tentang Festival Danau Sentani...</p>
+                        <a href="fastival.html" style="font-style: italic;">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="assets/img/g-4.jpg" alt="danau" style="width:150px">
+                    <div>
+                        <h3>Tradisi Suku Santani yang unik dan langka</h3>
+                        <p>Menjelaskan tentang suku unik di Sentani...</p>
+                        <a href="suku.html" style="font-style: italic;">Selengkapnya</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <section id="danau">
+        <div class="danau" style="background-color: white;">
+            <h2>Keindahan Danau Sentani</h2>
+            <img src="assets/img/danau.jpg" alt="danau" style="width: 500px; height: 500px;">
+            <p>Danau Sentani adalah danau yang terletak di Papua, Indonesia. Danau ini memiliki luas sekitar 9.360 hektar dan merupakan danau terluas di Papua. Danau Sentani memiliki 21 pulau kecil dan 19 desa di sekitarnya. Danau Sentani memiliki keindahan alam yang sangat menakjubkan. Danau ini dikelilingi oleh pegunungan yang hijau dan air yang jernih. Danau Sentani juga memiliki keanekaragaman hayati yang sangat tinggi. Di danau ini terdapat berbagai jenis ikan, burung, dan tumbuhan langka.</p>
+            <p>Selain menjadi daya tarik wisata, Danau Sentani juga memiliki nilai budaya yang sangat tinggi. Masyarakat di sekitar danau ini memiliki tradisi dan kebiasaan yang unik, seperti seni ukir kayu, tarian adat, dan festival tahunan yang meriah.</p>
+            <p>Banyak wisatawan yang datang ke Danau Sentani untuk menikmati pemandangan yang indah dan mempelajari budaya setempat. Mereka juga dapat menikmati berbagai aktivitas seperti naik perahu, memancing, dan berburu oleh-oleh khas Papua.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2025 - Dikembangkan oleh Fanny Debora</p>
+        <div class="links">
+            <a href="#">Disclaimer</a>
+            <a href="about.html">Tentang Kami</a>
+            <a href="contact.html">Kontak</a>
+        </div>
+    </footer>
+</body>
+</html>
