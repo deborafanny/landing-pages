@@ -201,7 +201,6 @@ input, textarea {
 .btn:hover {
     opacity: 0.8;
 }
-
 .danau {
     display: flex;
     flex-direction: column; /* Mengatur urutan elemen anak secara vertikal */
