@@ -146,37 +146,35 @@ li a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    justify-items: center;
-    justify-content: center;
-    align-items:center;
+    
+    /* Menengahkan konten */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan semua elemen */
+    text-align: center;
 }
 
 .contact h2 {
-    text-align: center;
     color: #333;
 }
 
 .contact p {
-    text-align: center;
     color: #858484;
     margin-bottom: 30px;
 }
 
+/* Formulir agar berada di tengah */
 form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    margin: 5px;
-    justify-content: center;
+    width: 100%;
+    align-items: center; /* Pusatkan input */
 }
 
-label {
-    /* font-weight: bold; */
-    margin-bottom: 5px;
-    color: #333;
-}
-
+/* Pastikan input dan textarea menyesuaikan lebar form */
 input, textarea {
+    width: 100%; /* Sesuaikan lebar */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #1e1e1e;
@@ -184,6 +182,7 @@ input, textarea {
     font-size: 16px;
 }
 
+/* Tombol juga berada di tengah */
 .btn {
     background-color: #66bb6a;
     color: white;
@@ -192,8 +191,8 @@ input, textarea {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    margin-right: 10px;
-    margin: 8px ;
+    width: 100%; /* Sesuaikan dengan form */
+    text-align: center;
 }
 
 .btn[type="reset"] {
@@ -203,6 +202,7 @@ input, textarea {
 .btn:hover {
     opacity: 0.8;
 }
+
 .danau {
     display: flex;
     flex-direction: column; /* Mengatur urutan elemen anak secara vertikal */
